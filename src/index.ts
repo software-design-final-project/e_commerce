@@ -1,4 +1,5 @@
 import express from "express";
+const serverless = require("serverless-http");
 const path = require('path')
 import navigateRoutes from './routes/navigate'
 
@@ -23,4 +24,9 @@ app.use((_, res, next) => {
 app.listen(PORT, () => {
     console.log(`Server running on port ${PORT}`)
 })
+
+const router = express.Router();
+app.use(`/.netlify/functions/api`, router);
+module.exports = app;
+module.exports.handler = serverless(app);
 
