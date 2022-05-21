@@ -9,7 +9,7 @@ app.use(navigateRoutes)
 app.use(express.static(path.join(__dirname,'public')))
 app.set('view engine', 'ejs')
 app.set('views', path.join(__dirname,'views'))
-const PORT = 4000
+const PORT = 3000
 
 app.get('/ping', (_, res) => {
     console.log('someone pinged here!!')
