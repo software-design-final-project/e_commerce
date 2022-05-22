@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Blog Single | E-Shopper</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/prettyPhoto.css" rel="stylesheet">
+    <link href="css/price-range.css" rel="stylesheet">
+    <link href="css/animate.css" rel="stylesheet">
+	<link href="css/main.css" rel="stylesheet">
+	<link href="css/responsive.css" rel="stylesheet">
+    <!--[if lt IE 9]>
+    <script src="js/html5shiv.js"></script>
+    <script src="js/respond.min.js"></script>
+    <![endif]-->       
+    <link rel="shortcut icon" href="images/ico/favicon.ico">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="images/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/ico/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="images/ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="images/ico/apple-touch-icon-57-precomposed.png">
+</head><!--/head-->
+
+<body>
+	<%- include('../views/header.ejs'); %><!--/header-->
+	
+	<section>
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-3">
+					<div class="left-sidebar">
+						<h2>Categorias</h2>
+						<div class="panel-group category-products" id="accordian"><!--category-productsr-->
+							<div class="panel panel-default">
+								<div class="panel-heading">
+									<h4 class="panel-title"><a href="#">Accesorios</a></h4>
+								</div>
+
+							</div>
+							<div class="panel panel-default">
+								<div class="panel-heading">
+									<h4 class="panel-title"><a href="#">Raquetas</a></h4>
+								</div>
+							</div>
+							
+							<div class="panel panel-default">
+								<div class="panel-heading">
+									<h4 class="panel-title"><a href="#">Bolsos</a></h4>
+								</div>
+
+							</div>
+							<div class="panel panel-default">
+								<div class="panel-heading">
+									<h4 class="panel-title"><a href="#">Zapatos</a></h4>
+								</div>
+							</div>
+
+
+						</div><!--/category-productsr-->
+					
+						<div class="brands_products"><!--brands_products-->
+							<h2>Marcas</h2>
+							<div class="brands-name">
+								<ul class="nav nav-pills nav-stacked">
+									<li><a href=""> <span class="pull-right">(24)</span>Wilson</a></li>
+									<li><a href=""> <span class="pull-right">(15)</span>Babolat</a></li>
+									<li><a href=""> <span class="pull-right">(10)</span>Head</a></li>
+									<li><a href=""> <span class="pull-right">(6)</span>Yonex</a></li>
+									<li><a href=""> <span class="pull-right">(2)</span>Prince</a></li>
+									<li><a href=""> <span class="pull-right">(9)</span>Dunlop</a></li>
+								</ul>
+							</div>
+						</div><!--/brands_products-->
+						
+						<div class="price-range"><!--price-range-->
+							<h2>Rango de precio</h2>
+							<div class="well">
+								 <input type="text" class="span2" value="" data-slider-min="0" data-slider-max="600" data-slider-step="5" data-slider-value="[250,450]" id="sl2" ><br />
+								 <b>$ 0</b> <b class="pull-right">$ 600</b>
+							</div>
+						</div><!--/price-range-->
+						
+						<div class="promo text-center"><!--promo-->
+							<a href="">
+								<img src="images/home/promo.png" width="270" height="329" alt=""/>
+							</a>
+						</div><!--/promo-->
+						
+					</div>
+				</div>
+				<div class="col-sm-9">
+					<div class="blog-post-area">
+						<h2 class="title text-center">Últimas novedades</h2>
+						<div class="single-blog-post">
+							<h3>Por el buen juego, y por el medio ambiente. Disponibles Wilson Triniti</h3>
+							<div class="post-meta">
+								<ul>
+									<li><i class="fa fa-user"></i> Blessd Diaz</li>
+									<li><i class="fa fa-clock-o"></i> 00:00 am</li>
+									<li><i class="fa fa-calendar"></i> ENE 1, 2022</li>
+								</ul>
+								<span>
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star-half-o"></i>
+								</span>
+							</div>
+							<a href="blog1-product-details">
+								<img src="images/blog/wilson-triniti.png" alt="">
+							</a>
+							<p>
+								La primera pelota de tenis del mundo de alto rendimiento respetuosa con el medio ambiente: Embalaje 100 % sostenible, mantiene el aspecto de pelota nueva cuatro veces más tiempo para reducir el consumo y los desechos, y el 5 % de los ingresos de las pelotas estará destinado a apoyar las labores de sostenibilidad mundial.</p> <br>
+							<div class="pager-area">
+								<ul class="pager pull-right">
+									<li><a href="blog-single">Anterior</a></li>
+									<li><a href="blog2-single">Siguiente</a></li>
+								</ul>
+							</div>
+						</div>
+					</div><!--/blog-post-area-->
+
+					<div class="rating-area">
+						<ul class="ratings">
+							<li class="rate-this">Califica esta publicación:</li>
+							<li>
+								<i class="fa fa-star color"></i>
+								<i class="fa fa-star color"></i>
+								<i class="fa fa-star color"></i>
+								<i class="fa fa-star color"></i>
+								<i class="fa fa-star fa-star-half-o"></i>
+							</li>
+							<li class="color">(12+1 votos)</li>
+						</ul>
+						<ul class="tag">
+							<li>TAG:</li>
+							<li><a class="color" href="">Bolas </a></li>
+						</ul>
+					</div><!--/rating-area-->
+
+					<div class="socials-share">
+						<a href=""><img src="images/blog/socials.png" alt=""></a>
+					</div><!--/socials-share-->
+
+					<%- include('../views/comments.ejs'); %><!--/Comments-->
+					
+					<%- include('../views/reply-box.ejs'); %><!--/reply Box-->
+				</div>	
+			</div>
+		</div>
+	</section>
+	
+	<%- include('../views/footer.ejs'); %><!--/Footer-->
+	
+
+  
+    <script src="js/jquery.js"></script>
+	<script src="js/price-range.js"></script>
+	<script src="js/jquery.scrollUp.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.prettyPhoto.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
