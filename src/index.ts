@@ -4,7 +4,7 @@ import navigateRoutes from './routes/navigate'
 
 
 const app = express()
-require('./passport.ts');
+
 app.use(express.json())
 app.use(navigateRoutes)
 app.use(express.static(path.join(__dirname,'public')))
