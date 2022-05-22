@@ -1,5 +1,4 @@
 import express from "express";
-const serverless = require("serverless-http");
 const path = require('path')
 import navigateRoutes from './routes/navigate'
 
@@ -9,7 +8,7 @@ app.use(navigateRoutes)
 app.use(express.static(path.join(__dirname,'public')))
 app.set('view engine', 'ejs')
 app.set('views', path.join(__dirname,'views'))
-const PORT = 3000
+const PORT = process.env.PORT || 4000 
 
 app.get('/ping', (_, res) => {
     console.log('someone pinged here!!')
@@ -25,8 +24,6 @@ app.listen(PORT, () => {
     console.log(`Server running on port ${PORT}`)
 })
 
-const router = express.Router();
-app.use(`/.netlify/functions/api`, router);
-module.exports = app;
-module.exports.handler = serverless(app);
+
+
 

@@ -8,7 +8,7 @@
     "start": "node build/index.js",
     "tsc": "tsc",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "NODE_ENV=production ./node_modules/.bin/netlify-lambda build build/index.js"
+    "copy_files": "cp -r src/{public,views} build"
   },
   "keywords": [],
   "author": "",
@@ -20,8 +20,6 @@
     "typescript": "^4.6.4"
   },
   "dependencies": {
-    "express": "4.18.1",
-    "netlify-lambda": "^2.0.15",
-    "serverless-http": "^3.0.1"
+    "express": "4.18.1"
   }
 }

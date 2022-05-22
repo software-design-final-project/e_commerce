@@ -35,7 +35,7 @@ router.get('/login', (_,res) => {
 })
 
 router.get('/product-details', (_,res) => {
-    res.render('produc-details.ejs')
+    res.render('product-details.ejs')
  })
 
  router.get('/shop', (_,res) => {
