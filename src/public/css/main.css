@@ -744,6 +744,10 @@ h2.title:before {
     padding-left: 20px;
 }
 
+ul1 li{
+    list-style: circle;
+}
+
 .panel-body ul li a {
     color: #696763;
     font-family: 'Roboto', sans-serif;
@@ -878,6 +882,10 @@ h2.title {
     position: relative;
 }
 
+.jc-center {
+    justify-content: center;
+}
+
 .product-overlay {
     background: #34A784;
     opacity: 0.8;
@@ -885,8 +893,8 @@ h2.title {
     display: none;
     height: 0;
     position: absolute;
-    -webkit-transition: height 500ms ease 0s;
-    transition: height 500ms ease 0s;
+    -webkit-transition: height 200ms ease 0s;
+    transition: height 200ms ease 0s;
     width: 100%;
     display: block;
 }
@@ -1430,7 +1438,9 @@ h2.title {
 .signup-form {}
 
 .login-form h2,
-.signup-form h2 {
+.signup-form h2,
+.description-form h2,
+.data-form h2 {
     color: #696763;
     font-family: 'Roboto', sans-serif;
     font-size: 20px;
@@ -1439,7 +1449,9 @@ h2.title {
 }
 
 .login-form form input,
-.signup-form form input {
+.signup-form form input,
+.description-form form input,
+.data-form form input {
     background: #dbfff4;
     border: medium none;
     color: #39423E;
@@ -1454,23 +1466,30 @@ h2.title {
     width: 100%;
 }
 
-.login-form form span {
+.login-form form span,
+.data-form form input {
     line-height: 25px;
 }
 
-.login-form form span input {
+.login-form form span input,
+.data-form form  span input {
     width: 15px;
     float: left;
     height: 15px;
     margin-right: 5px;
 }
 
-.login-form form button {
+.login-form form button,
+.data-form form button,
+.row .col-sm-4 button {
     margin-top: 23px;
 }
 
 .login-form form button,
-.signup-form form button {
+.signup-form form button,
+.description-form form button,
+.data-form form button,
+.row .col-sm-4 button {
     background: #34A784;
     border: medium none;
     border-radius: 0;
@@ -1480,9 +1499,18 @@ h2.title {
     padding: 6px 25px;
 }
 
-.login-form label {}
+input[type="checkbox"] {
+    display: inline-block;
+    width: 15px;
+    margin-right: 7px;
+    vertical-align:sub;
+}
 
-.login-form label input {
+.login-form label,
+.data-form label {}
+
+.login-form label input,
+.data-form label input {
     border: medium none;
     display: inline-block;
     height: 0;
@@ -1726,12 +1754,34 @@ h2.title {
 .user_info>li>span {}
 
 .user_info input,
-select,
 textarea {
     background: #dbfff4;
     border: 0;
     color: #39423E;
     padding: 5px;
+    margin-bottom: 10px;
+    width: 100%;
+    border-radius: 0;
+    resize: none
+}
+
+select {
+    background: #dbfff4;
+    border: 0;
+    color: #696763;
+    padding: 5px;
+    margin-bottom: 10px;
+    width: 100%;
+    border-radius: 0;
+    resize: none
+}
+
+select:active, select:hover {
+    background: #f4fffc;
+    border: 0;
+    color: #39423E;
+    padding: 5px;
+    margin-bottom: 10px;
     width: 100%;
     border-radius: 0;
     resize: none
@@ -1868,7 +1918,6 @@ textarea {
 }
 
 .shopper-info>form>input,
-.form-two>form>select,
 .form-two>form>input,
 .form-one>form>input {
     background: #dbfff4;
@@ -2069,7 +2118,7 @@ textarea {
     font-weight: 700;
     padding: 4px;
     text-transform: uppercase;
-    width: 57px;
+    width: 80px;
 }
 
 .pager-area .pager li a:hover {
@@ -2147,7 +2196,7 @@ textarea {
 
 .commnets p,
 .response-area p,
-.replay-box p {
+.reply-box p {
     font-size: 12px
 }
 
@@ -2264,12 +2313,12 @@ textarea {
     left: 27px;
 }
 
-.replay-box {
+.reply-box {
     margin-bottom: 107px;
     margin-top: 55px;
 }
 
-.replay-box h2 {
+.reply-box h2 {
     font-weight: 700;
     font-size: 20px;
     color: #363432;
@@ -2277,7 +2326,7 @@ textarea {
     margin-bottom: 45px
 }
 
-.replay-box label {
+.reply-box label {
     background: #34A784;
     color: #FFFFFF;
     margin-bottom: 15px;
@@ -2286,34 +2335,39 @@ textarea {
     font-weight: 400;
 }
 
-.replay-box span {
+.reply-box span {
     color: #34A784;
     float: right;
     font-weight: 700;
     margin-top: 21px;
 }
 
-.replay-box form input {
+.reply-box form input {
     border: 1px solid #F7F7F0;
     color: #ADB2B2;
+    background: #dbfff4;;
     font-size: 12px;
     margin-bottom: 22px;
     padding: 8px;
     width: 100%;
 }
 
-.replay-box form input:hover,
+.reply-box form input:hover,
 .text-area textarea:hover {
     border: 1px solid #34A784;
 }
 
-.text-area {
+.col-sm-8 .text-area {
     margin-top: 66px
 }
 
+.text-area {
+    margin-top: 0px
+}
+
 .text-area textarea {
-    background: transparent;
-    border: 1px solid#F7F7F0
+    background: #dbfff4;;
+    border: 1px transparent;
 }
 
 .btn.btn-primary {

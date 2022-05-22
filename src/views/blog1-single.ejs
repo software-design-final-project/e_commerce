@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="">
-    <title>Blog | E-Shopper</title>
+    <title>Blog Single | E-Shopper</title>
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/font-awesome.min.css" rel="stylesheet">
     <link href="css/prettyPhoto.css" rel="stylesheet">
@@ -25,8 +25,8 @@
 </head><!--/head-->
 
 <body>
-
-	<%- include('../views/header.ejs'); %>
+	<%- include('../views/header.ejs'); %><!--/header-->
+	
 	<section>
 		<div class="container">
 			<div class="row">
@@ -95,28 +95,6 @@
 					<div class="blog-post-area">
 						<h2 class="title text-center">Últimas novedades</h2>
 						<div class="single-blog-post">
-							<h3>Llegada de armamento: Nueva Head Boom en todas sus versiones</h3>
-							<div class="post-meta">
-								<ul>
-									<li><i class="fa fa-user"></i> Ryan Castro</li>
-									<li><i class="fa fa-clock-o"></i> 04:20 pm</li>
-									<li><i class="fa fa-calendar"></i> MAY 26, 2022</li>
-								</ul>
-								<span>
-										<i class="fa fa-star"></i>
-										<i class="fa fa-star"></i>
-										<i class="fa fa-star"></i>
-										<i class="fa fa-star"></i>
-										<i class="fa fa-star-half-o"></i>
-								</span>
-							</div>
-							<a href="blog-single">
-								<img src="images/blog/head-boom-advertising.png" alt="">
-							</a>
-							<p>Los jugadores de todos los niveles, desde los principiantes hasta los más avanzados podrán tomarse la diversión como un tema muy serio con la raqueta BOOM, perfecta para reforzar tu poder en la pista y confianza. La nueva raqueta BOOM está diseñada con la nueva construcción Auxetic para conseguir una mejor sensación de impacto ¡Disfruta del partido y olvídate de todo lo demás!</p>
-							<a  class="btn btn-primary" href="blog-single">Leer más</a>
-						</div>
-						<div class="single-blog-post">
 							<h3>Por el buen juego, y por el medio ambiente. Disponibles Wilson Triniti</h3>
 							<div class="post-meta">
 								<ul>
@@ -132,51 +110,53 @@
 									<i class="fa fa-star-half-o"></i>
 								</span>
 							</div>
-							<a href="blog1-single">
+							<a href="blog1-product-details">
 								<img src="images/blog/wilson-triniti.png" alt="">
 							</a>
-							<p>La primera pelota de tenis del mundo de alto rendimiento respetuosa con el medio ambiente: Embalaje 100 % sostenible, mantiene el aspecto de pelota nueva cuatro veces más tiempo para reducir el consumo y los desechos, y el 5 % de los ingresos de las pelotas estará destinado a apoyar las labores de sostenibilidad mundial.</p>
-							<a  class="btn btn-primary" href="blog1-single">Leer más</a>
-						</div>
-						<div class="single-blog-post">
-							<h3>Siente el poder de Rafa Nadal en tu propia mano. Unidades limitadas de Babolat Pure Aero</h3>
-							<div class="post-meta">
-								<ul>
-									<li><i class="fa fa-user"></i> Harry Maguire</li>
-									<li><i class="fa fa-clock-o"></i> 12:02 pm</li>
-									<li><i class="fa fa-calendar"></i> DEC 24, 2021</li>
+							<p>
+								La primera pelota de tenis del mundo de alto rendimiento respetuosa con el medio ambiente: Embalaje 100 % sostenible, mantiene el aspecto de pelota nueva cuatro veces más tiempo para reducir el consumo y los desechos, y el 5 % de los ingresos de las pelotas estará destinado a apoyar las labores de sostenibilidad mundial.</p> <br>
+							<div class="pager-area">
+								<ul class="pager pull-right">
+									<li><a href="blog-single">Anterior</a></li>
+									<li><a href="blog2-single">Siguiente</a></li>
 								</ul>
-								<span>
-									<i class="fa fa-star"></i>
-									<i class="fa fa-star"></i>
-									<i class="fa fa-star"></i>
-									<i class="fa fa-star"></i>
-									<i class="fa fa-star-half-o"></i>
-								</span>
 							</div>
-							<a href="blog2-single">
-								<img src="images/blog/babolat-advertising.jpg" alt="">
-							</a>
-							<p>La pure aero es para jugadores que utilizan el efecto como arma definitiva para dominar la competición. Basándonos en opiniones de jugadores de todo el mundo, hemos rediseñado la raqueta para añadir más control y aumentar las sensaciones.</p>
-							<a  class="btn btn-primary" href="blog2-single">Leer más</a>
 						</div>
-						<div class="pagination-area">
-							<ul class="pagination">
-								<li><a href="" class="active">1</a></li>
-								<li><a href="">2</a></li>
-								<li><a href="">3</a></li>
-								<li><a href=""><i class="fa fa-angle-double-right"></i></a></li>
-							</ul>
-						</div>
-					</div>
-				</div>
+					</div><!--/blog-post-area-->
+
+					<div class="rating-area">
+						<ul class="ratings">
+							<li class="rate-this">Califica esta publicación:</li>
+							<li>
+								<i class="fa fa-star color"></i>
+								<i class="fa fa-star color"></i>
+								<i class="fa fa-star color"></i>
+								<i class="fa fa-star color"></i>
+								<i class="fa fa-star fa-star-half-o"></i>
+							</li>
+							<li class="color">(12+1 votos)</li>
+						</ul>
+						<ul class="tag">
+							<li>TAG:</li>
+							<li><a class="color" href="">Bolas </a></li>
+						</ul>
+					</div><!--/rating-area-->
+
+					<div class="socials-share">
+						<a href=""><img src="images/blog/socials.png" alt=""></a>
+					</div><!--/socials-share-->
+
+					<%- include('../views/comments.ejs'); %><!--/Comments-->
+					
+					<%- include('../views/reply-box.ejs'); %><!--/reply Box-->
+				</div>	
 			</div>
 		</div>
 	</section>
 	
-
+	<%- include('../views/footer.ejs'); %><!--/Footer-->
 	
-	<%- include('../views/footer.ejs'); %>
+
   
     <script src="js/jquery.js"></script>
 	<script src="js/price-range.js"></script>
