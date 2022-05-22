@@ -1430,7 +1430,9 @@ h2.title {
 .signup-form {}
 
 .login-form h2,
-.signup-form h2 {
+.signup-form h2,
+.description-form h2,
+.data-form h2 {
     color: #696763;
     font-family: 'Roboto', sans-serif;
     font-size: 20px;
@@ -1439,7 +1441,9 @@ h2.title {
 }
 
 .login-form form input,
-.signup-form form input {
+.signup-form form input,
+.description-form form input,
+.data-form form input {
     background: #dbfff4;
     border: medium none;
     color: #39423E;
@@ -1454,23 +1458,30 @@ h2.title {
     width: 100%;
 }
 
-.login-form form span {
+.login-form form span,
+.data-form form input {
     line-height: 25px;
 }
 
-.login-form form span input {
+.login-form form span input,
+.data-form form  span input {
     width: 15px;
     float: left;
     height: 15px;
     margin-right: 5px;
 }
 
-.login-form form button {
+.login-form form button,
+.data-form form button,
+.row .col-sm-4 button {
     margin-top: 23px;
 }
 
 .login-form form button,
-.signup-form form button {
+.signup-form form button,
+.description-form form button,
+.data-form form button,
+.row .col-sm-4 button {
     background: #34A784;
     border: medium none;
     border-radius: 0;
@@ -1480,9 +1491,18 @@ h2.title {
     padding: 6px 25px;
 }
 
-.login-form label {}
+input[type="checkbox"] {
+    display: inline-block;
+    width: 15px;
+    margin-right: 7px;
+    vertical-align:sub;
+}
 
-.login-form label input {
+.login-form label,
+.data-form label {}
+
+.login-form label input,
+.data-form label input {
     border: medium none;
     display: inline-block;
     height: 0;
@@ -1726,12 +1746,34 @@ h2.title {
 .user_info>li>span {}
 
 .user_info input,
-select,
 textarea {
     background: #dbfff4;
     border: 0;
     color: #39423E;
     padding: 5px;
+    margin-bottom: 10px;
+    width: 100%;
+    border-radius: 0;
+    resize: none
+}
+
+select {
+    background: #dbfff4;
+    border: 0;
+    color: #696763;
+    padding: 5px;
+    margin-bottom: 10px;
+    width: 100%;
+    border-radius: 0;
+    resize: none
+}
+
+select:active, select:hover {
+    background: #f4fffc;
+    border: 0;
+    color: #39423E;
+    padding: 5px;
+    margin-bottom: 10px;
     width: 100%;
     border-radius: 0;
     resize: none
@@ -1868,7 +1910,6 @@ textarea {
 }
 
 .shopper-info>form>input,
-.form-two>form>select,
 .form-two>form>input,
 .form-one>form>input {
     background: #dbfff4;
@@ -2296,6 +2337,7 @@ textarea {
 .reply-box form input {
     border: 1px solid #F7F7F0;
     color: #ADB2B2;
+    background: #dbfff4;;
     font-size: 12px;
     margin-bottom: 22px;
     padding: 8px;
@@ -2307,13 +2349,17 @@ textarea {
     border: 1px solid #34A784;
 }
 
-.text-area {
+.col-sm-8 .text-area {
     margin-top: 66px
 }
 
+.text-area {
+    margin-top: 0px
+}
+
 .text-area textarea {
-    background: transparent;
-    border: 1px solid#F7F7F0
+    background: #dbfff4;;
+    border: 1px transparent;
 }
 
 .btn.btn-primary {
