@@ -252,9 +252,9 @@ a#scrollUp i {
 }
 
 .search_box input {
-    background: #85E0C5;
+    background: #dbfff4;
     border: medium none;
-    color: #B2B2B2;
+    color: #39423E;
     font-family: 'roboto';
     font-size: 12px;
     font-weight: 300;
@@ -1333,9 +1333,9 @@ h2.title {
 }
 
 #reviews form span input {
-    background: #85E0C5;
+    background: #dbfff4;
     border: 0 none;
-    color: #A6A6A1;
+    color: #39423E;
     font-family: 'Roboto', sans-serif;
     font-size: 14px;
     outline: medium none;
@@ -1348,9 +1348,9 @@ h2.title {
 }
 
 #reviews textarea {
-    background: #85E0C5;
+    background: #dbfff4;
     border: medium none;
-    color: #A6A6A1;
+    color: #39423E;
     height: 195px;
     margin-bottom: 25px;
     margin-top: 15px;
@@ -1440,9 +1440,9 @@ h2.title {
 
 .login-form form input,
 .signup-form form input {
-    background: #85E0C5;
+    background: #dbfff4;
     border: medium none;
-    color: #696763;
+    color: #39423E;
     display: block;
     font-family: 'Roboto', sans-serif;
     font-size: 14px;
@@ -1673,7 +1673,7 @@ h2.title {
 #do_action .total_area,
 #do_action .chose_area {
     border: 1px solid #E6E4DF;
-    color: #696763;
+    color: #39423E;
     padding: 30px 25px 30px 0;
     margin-bottom: 80px;
 }
@@ -1683,14 +1683,14 @@ h2.title {
 }
 
 .total_area ul li {
-    background: #E6E4DF;
-    color: #696763;
+    background: #dbfff4;
+    color: #39423E;
     margin-top: 10px;
     padding: 7px 20px;
 }
 
 .user_option label {
-    color: #696763;
+    color: #39423E;
     font-weight: normal;
     margin-left: 10px;
 }
@@ -1703,7 +1703,7 @@ h2.title {
 }
 
 .user_info label {
-    color: #696763;
+    color: #39423E;
     display: block;
     font-size: 15px;
     font-weight: normal;
@@ -1728,9 +1728,9 @@ h2.title {
 .user_info input,
 select,
 textarea {
-    background: #85E0C5;
+    background: #dbfff4;
     border: 0;
-    color: #696763;
+    color: #39423E;
     padding: 5px;
     width: 100%;
     border-radius: 0;
@@ -1871,7 +1871,7 @@ textarea {
 .form-two>form>select,
 .form-two>form>input,
 .form-one>form>input {
-    background: #85E0C5;
+    background: #dbfff4;
     border: 0 none;
     margin-bottom: 10px;
     padding: 10px;
