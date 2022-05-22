@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Login | DOWN THE T</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/prettyPhoto.css" rel="stylesheet">
+    <link href="css/price-range.css" rel="stylesheet">
+    <link href="css/animate.css" rel="stylesheet">
+	<link href="css/main.css" rel="stylesheet">
+	<link href="css/responsive.css" rel="stylesheet">
+    <!--[if lt IE 9]>
+    <script src="js/html5shiv.js"></script>
+    <script src="js/respond.min.js"></script>
+    <![endif]-->       
+    <link rel="shortcut icon" href="images/ico/favicon.ico">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="images/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/ico/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="images/ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="images/ico/apple-touch-icon-57-precomposed.png">
+</head><!--/head-->
+
+<body>
+	<%- include('../views/header.ejs'); %>
+	<div id="login-page" class="container">
+    	<div class="bg">
+	    	<div class="row">    		
+	    		<div class="col-sm-12">    			   			
+					<h2 class="title text-center">Empieza a vender con nosotros </h2>    			    				    				
+				</div>			 		
+			</div>    	
+    		<div class="row"> 
+				<section id=""><!--form-->
+					<div class="container">
+						<div class="row">
+							<div class="col-sm-4 col-sm-offset-1">
+								<div class="data-form"><!--login form-->
+									<h2>Información de representante</h2>
+									<form action="#">
+										<label>Nombre Completo*</label>
+										<input type="text" placeholder="Nombre"/>
+										<label>E-mail de contacto*</label>
+										<input type="email" placeholder="Correo electrónico" />
+										<label>Tipo de Documento de identificación*</label>
+										<select class="option">
+											<option>-- Tipo de  documento--</option>
+											<option>Cédula de ciudadanía</option>
+											<option>Tarjeta de extranjería</option>
+											<option>Cédula de extranjería</option>
+											<option>Pasaporte</option>
+											<option>NIT</option>
+										</select>
+										<label for="nacimiento">Fecha de nacimiento:*</label>
+										<input type="date" id="fec-nac" name="nacimiento"
+											value= id = "2001-11-09"
+											min="1930-01-01" max="2003-12-31">
+									</form>
+								</div><!--/login form-->
+							</div>
+							<div class="col-sm-4">
+								<div class="description-form"><!--sign up form-->
+									<h2>Cuéntanos sobre tu empresa/emprendimiento</h2>
+									<form action="#">
+										<label for="company-name">Nombre de la empresa/emprendimiento:*</label>
+										<input type="text" placeholder="Nombre"/>
+										<label for="company-description">Describe tu empresa/emprendimiento ¿Qué vendes?¿Qué ofreces?*</label>
+										<div class="text-area">
+											<textarea name="message" rows="11"></textarea>
+										</div>
+									</form>
+								</div><!--/sign up form-->
+							</div>
+						</div>
+						<div class="row">
+							<div class = "col-sm-4 col-sm-offset-1">
+								<span>
+									<input type="checkbox" class="checkbox"> 
+									Acepto las políticas de venta y tratamiento de datos.
+								</span>
+								<button type="submit" class="btn btn-default">Enviar datos para revisión</button>
+							</div>
+							
+						</div>
+					</div>
+				</section><!--/form-->
+				<div style="height: 100px;"></div>
+			</div> 	
+		</div><!--/form-->
+	</div>
+	
+	<%- include('../views/footer.ejs'); %>
+	
+
+  
+    <script src="js/jquery.js"></script>
+	<script src="js/price-range.js"></script>
+    <script src="js/jquery.scrollUp.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.prettyPhoto.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
