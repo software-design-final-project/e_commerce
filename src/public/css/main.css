@@ -744,6 +744,10 @@ h2.title:before {
     padding-left: 20px;
 }
 
+ul1 li{
+    list-style: circle;
+}
+
 .panel-body ul li a {
     color: #696763;
     font-family: 'Roboto', sans-serif;
@@ -878,6 +882,10 @@ h2.title {
     position: relative;
 }
 
+.jc-center {
+    justify-content: center;
+}
+
 .product-overlay {
     background: #34A784;
     opacity: 0.8;
@@ -885,8 +893,8 @@ h2.title {
     display: none;
     height: 0;
     position: absolute;
-    -webkit-transition: height 500ms ease 0s;
-    transition: height 500ms ease 0s;
+    -webkit-transition: height 200ms ease 0s;
+    transition: height 200ms ease 0s;
     width: 100%;
     display: block;
 }
