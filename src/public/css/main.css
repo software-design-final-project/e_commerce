@@ -2069,7 +2069,7 @@ textarea {
     font-weight: 700;
     padding: 4px;
     text-transform: uppercase;
-    width: 57px;
+    width: 80px;
 }
 
 .pager-area .pager li a:hover {
@@ -2147,7 +2147,7 @@ textarea {
 
 .commnets p,
 .response-area p,
-.replay-box p {
+.reply-box p {
     font-size: 12px
 }
 
@@ -2264,12 +2264,12 @@ textarea {
     left: 27px;
 }
 
-.replay-box {
+.reply-box {
     margin-bottom: 107px;
     margin-top: 55px;
 }
 
-.replay-box h2 {
+.reply-box h2 {
     font-weight: 700;
     font-size: 20px;
     color: #363432;
@@ -2277,7 +2277,7 @@ textarea {
     margin-bottom: 45px
 }
 
-.replay-box label {
+.reply-box label {
     background: #34A784;
     color: #FFFFFF;
     margin-bottom: 15px;
@@ -2286,14 +2286,14 @@ textarea {
     font-weight: 400;
 }
 
-.replay-box span {
+.reply-box span {
     color: #34A784;
     float: right;
     font-weight: 700;
     margin-top: 21px;
 }
 
-.replay-box form input {
+.reply-box form input {
     border: 1px solid #F7F7F0;
     color: #ADB2B2;
     font-size: 12px;
@@ -2302,7 +2302,7 @@ textarea {
     width: 100%;
 }
 
-.replay-box form input:hover,
+.reply-box form input:hover,
 .text-area textarea:hover {
     border: 1px solid #34A784;
 }

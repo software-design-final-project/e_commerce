@@ -14,6 +14,14 @@ router.get('/blog-single', (_,res) => {
     res.render('blog-single.ejs')
 })
 
+router.get('/blog1-single', (_,res) => {
+    res.render('blog1-single.ejs')
+})
+
+router.get('/blog2-single', (_,res) => {
+    res.render('blog2-single.ejs')
+})
+
 router.get('/blog', (_,res) => {
     res.render('blog.ejs')
 })
