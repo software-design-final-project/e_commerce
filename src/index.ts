@@ -19,7 +19,8 @@ app.get('/ping', (_, res) => {
 })
 
 app.use((_, res, next) => {
-    res.status(404).render('404.ejs')
+    res.status(404);
+    res.render('404.ejs')
 })
 
 app.listen(PORT, () => {

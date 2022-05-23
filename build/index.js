@@ -18,7 +18,8 @@ app.get('/ping', (_, res) => {
     res.send('pong');
 });
 app.use((_, res, next) => {
-    res.status(404).render('404.ejs');
+    res.status(404);
+    res.render('404.ejs');
 });
 app.listen(PORT, () => {
     console.log(`Server running on port ${PORT}`);
